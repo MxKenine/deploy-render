@@ -4,7 +4,7 @@ require('dotenv').config()
 
 const app = express()
 
-app.use(cors({origin:process.env.PORT_URL}))
+app.use(cors({origin:process.env.FRONT_URL}))
 
 app.get('/', (req, res)=> {
     res.json({message:"Bienvenue chez Express JS"})
